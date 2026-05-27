@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | LAS - Tech Repairs Chessington</title>
+    <meta name="description" content="Expert home-run computer, MacBook and PC repair service in Chessington. Screen swaps, upgrades, virus cleanup, and consultations by Labeeb.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">LAS <span class="primary-text">TECH REPAIRS</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-trigger">Repairs <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="laptop-screen.html">Screen Repair</a></li>
+                        <li><a href="slow-performance.html">Performance Tuneup</a></li>
+                        <li><a href="virus-malware.html">Virus &amp; Malware</a></li>
+                        <li><a href="data-recovery.html">Data Recovery</a></li>
+                        <li><a href="ram-storage.html">RAM &amp; SSD Upgrade</a></li>
+                        <li><a href="keyboard-ports.html">Keyboard &amp; Ports</a></li>
+                        <li><a href="liquid-spill.html">Liquid Spill Recovery</a></li>
+                        <li><a href="power-charging.html">Power &amp; Battery</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tel:07557351219" class="btn-nav-cta"><i class="fa-solid fa-phone"></i> Call Labeeb</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95)), url('repair-hero.jpg');">
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <span class="eyebrow"><i class="fa-solid fa-house-laptop"></i> Expert Chessington PC &amp; MacBook Repair</span>
+                <h1>Direct Computer Repairs. <br>Schedule with <span class="primary-text">Labeeb</span>.</h1>
+                <p class="hero-tagline">Premium computer and laptop repairs at fair, transparent rates. Arrange a home call-out visit, drop off your computer, or speak to Labeeb directly for free expert advice.</p>
+                <div class="hero-btns">
+                    <a href="tel:07557351219" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call: 07557 351219</a>
+                    <a href="#book-now" class="btn btn-outline"><i class="fa-solid fa-calendar-days"></i> Book Appointment &darr;</a>
+                </div>
+                <div class="walk-ins-tag">
+                    <span class="badge"><i class="fa-solid fa-bolt"></i> Free Remote Diagnostic Advice</span>
+                    <span class="badge"><i class="fa-solid fa-star"></i> 5.0 Stars (19 Reviews)</span>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal">
+                <div class="hero-image-frame" onclick="openLightbox('technician.jpg', 'Labeeb at the computer diagnostic workbench')">
+                    <img src="technician.jpg" alt="LAS Tech Repairs Workbench" class="hero-image">
+                    <div class="frame-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>View Repair Bench</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2>Our Computer Repair Services</h2>
+                <p class="subheading">Free advice, drop-offs, and door-to-door services across Chessington.</p>
+                <div class="accent-divider"></div>
+            </div>
+            
+            <div class="services-grid reveal">
+                <!-- Free Consultation (Core Service) -->
+                <div class="service-card" style="background-image: linear-gradient(rgba(37, 99, 235, 0.75), rgba(15, 23, 42, 0.9)), url('circuit-board.jpg'); border: 2px solid var(--primary);">
+                    <div class="card-content">
+                        <span class="service-badge"><i class="fa-solid fa-gift"></i> Recommended</span>
+                        <h3>Free Consultation</h3>
+                        <p>Speak directly to Labeeb for free diagnostic advice on your device before booking.</p>
+                        <a href="tel:07557351219" class="btn btn-outline" style="color: #ffffff; border-color: rgba(255,255,255,0.4); background: rgba(255,255,255,0.1); margin-top: 10px;">Call Now &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Screen Repair -->
+                <a href="laptop-screen.html" class="service-card-link">
+                    <div class="service-card" style="background-image: linear-gradient(rgba(17, 17, 17, 0.45), rgba(17, 17, 17, 0.75)), url('broken-screen.jpg');">
+                        <div class="card-content">
+                            <h3>Screen Repair</h3>
+                            <p>Smashed laptop panels &amp; bleeding LED displays replaced.</p>
+                            <span class="learn-more">Learn More &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Performance -->
+                <a href="slow-performance.html" class="service-card-link">
+                    <div class="service-card" style="background-image: linear-gradient(rgba(17, 17, 17, 0.45), rgba(17, 17, 17, 0.75)), url('slow-computer.jpg');">
+                        <div class="card-content">
+                            <h3>Performance Tuneup</h3>
+                            <p>Speed up slow bootups, clean files, and apply thermal paste.</p>
+                            <span class="learn-more">Learn More &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Virus Removal -->
+                <a href="virus-malware.html" class="service-card-link">
+                    <div class="service-card" style="background-image: linear-gradient(rgba(17, 17, 17, 0.45), rgba(17, 17, 17, 0.75)), url('virus-removal.jpg');">
+                        <div class="card-content">
+                            <h3>Virus &amp; Malware</h3>
+                            <p>Remove pop-ups, spyware, trojans, and lock screens.</p>
+                            <span class="learn-more">Learn More &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Data Recovery -->
+                <a href="data-recovery.html" class="service-card-link">
+                    <div class="service-card" style="background-image: linear-gradient(rgba(17, 17, 17, 0.45), rgba(17, 17, 17, 0.75)), url('data-recovery.jpg');">
+                        <div class="card-content">
+                            <h3>Data Recovery</h3>
+                            <p>Extract photos and files from failed hard drives and SSDs.</p>
+                            <span class="learn-more">Learn More &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- RAM/SSD Upgrade -->
+                <a href="ram-storage.html" class="service-card-link">
+                    <div class="service-card" style="background-image: linear-gradient(rgba(17, 17, 17, 0.45), rgba(17, 17, 17, 0.75)), url('ram-upgrade.jpg');">
+                        <div class="card-content">
+                            <h3>SSD &amp; RAM Upgrades</h3>
+                            <p>Upgrade low storage &amp; double multitasking speeds.</p>
+                            <span class="learn-more">Learn More &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Keyboard & Ports -->
+                <a href="keyboard-ports.html" class="service-card-link">
+                    <div class="service-card" style="background-image: linear-gradient(rgba(17, 17, 17, 0.45), rgba(17, 17, 17, 0.75)), url('keyboard-repair.jpg');">
+                        <div class="card-content">
+                            <h3>Keyboard &amp; Ports</h3>
+                            <p>Replace stuck keys, trackpads, and USB-C/power sockets.</p>
+                            <span class="learn-more">Learn More &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Water Damage -->
+                <a href="liquid-spill.html" class="service-card-link">
+                    <div class="service-card" style="background-image: linear-gradient(rgba(17, 17, 17, 0.45), rgba(17, 17, 17, 0.75)), url('water-damage.jpg');">
+                        <div class="card-content">
+                            <h3>Liquid Spill Recovery</h3>
+                            <p>Ultrasonic cleaning and logic board repair for spills.</p>
+                            <span class="learn-more">Learn More &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Power & Battery -->
+                <a href="power-charging.html" class="service-card-link">
+                    <div class="service-card" style="background-image: linear-gradient(rgba(17, 17, 17, 0.45), rgba(17, 17, 17, 0.75)), url('Power issue image 1.jpg');">
+                        <div class="card-content">
+                            <h3>Power &amp; Battery</h3>
+                            <p>Replace depleted cells, swollen batteries, and charging ports.</p>
+                            <span class="learn-more">Learn More &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Native Booking Form Section -->
+    <section class="booking-section" id="book-now">
+        <div class="container booking-grid">
+            <div class="booking-info reveal">
+                <span class="section-subtitle">Appointment Scheduling</span>
+                <h2>Book Your Repair With Labeeb</h2>
+                <p>Have your computer diagnosed or repaired directly by Labeeb. Fill in the request form and choose your preferred service option (Home call-out, Drop-off appointment, or Free Advice Phone Call).</p>
+                
+                <div class="contact-bullets">
+                    <div class="bullet-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <strong>Free Diagnosis Consultation</strong>
+                            <p>Get professional troubleshooting and pricing estimate at no charge.</p>
+                        </div>
+                    </div>
+                    <div class="bullet-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <strong>Flexible Scheduling</strong>
+                            <p>Open daily from 8:00 AM to 10:30 PM with evening appointments available.</p>
+                        </div>
+                    </div>
+                    <div class="bullet-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <strong>Fair &amp; Transparent Rates</strong>
+                            <p>Affordable diagnostic and repair fees with clear, upfront estimates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="booking-form-wrapper reveal">
+                <form class="native-booking-form" onsubmit="return handleBookingSubmit(event)">
+                    <div class="form-group">
+                        <label for="clientName">Your Name</label>
+                        <input type="text" id="clientName" required placeholder="e.g., Pete Sharpe">
+                    </div>
+                    <div class="form-group">
+                        <label for="clientPhone">Phone Number</label>
+                        <input type="tel" id="clientPhone" required placeholder="e.g., 07123 456789">
+                    </div>
+                    <div class="form-group-grid">
+                        <div class="form-group">
+                            <label for="deviceModel">Laptop/PC Model</label>
+                            <input type="text" id="deviceModel" placeholder="e.g., MacBook Air, Dell XPS">
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceType">Required Service</label>
+                            <select id="serviceType" required>
+                                <option value="" disabled selected>Select service...</option>
+                                <option value="consultation">Free Advice Consultation</option>
+                                <option value="screen">Screen Repair</option>
+                                <option value="performance">Performance Tuneup</option>
+                                <option value="virus">Virus &amp; Malware Cleanup</option>
+                                <option value="data">Data Recovery</option>
+                                <option value="upgrade">RAM &amp; SSD Upgrades</option>
+                                <option value="ports">Keyboard &amp; Ports</option>
+                                <option value="liquid">Liquid Spill Recovery</option>
+                                <option value="power">Power &amp; Charging Jack</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Option</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="deliveryOption" value="dropoff" checked>
+                                <span>Drop-Off Appointment</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="deliveryOption" value="callout">
+                                <span>Home call-out (Chessington area)</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="deliveryOption" value="phone">
+                                <span>Free Advice Consultation Call</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="issueDetails">Describe the Problem</label>
+                        <textarea id="issueDetails" rows="4" placeholder="Brief details about what is happening..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100"><i class="fa-solid fa-paper-plane"></i> Request Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2>Why Choose LAS - Tech Repairs?</h2>
+                <div class="accent-divider"></div>
+            </div>
+            
+            <div class="why-us-grid reveal">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>Direct 1-on-1 Communication</h3>
+                    <p>No receptionist or ticketing queues. Speak directly with Labeeb, your repair technician, for updates and transparency.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-wallet"></i></div>
+                    <h3>No Fix, No Fee Guarantee</h3>
+                    <p>Diagnostics and troubleshooting are free. If we cannot repair your device, you pay absolutely nothing.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3>Evenings &amp; Weekends</h3>
+                    <p>Unlike retail shops closing at 5:00 PM, Labeeb is available up to 10:30 PM for emergency drop-offs and call-outs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2>5.0 Star Rated in Chessington</h2>
+                <p class="subheading">Here's what local residents say about Labeeb's support.</p>
+                <div class="accent-divider"></div>
+            </div>
+            
+            <div class="reviews-grid reveal">
+                <div class="review-card">
+                    <p class="review-text">"Had a great experience with Labeeb. He fixed the pc perfectly and promptly. Good communication. Available in the evenings and friendly and helpful. I'd definitely recommend him to anyone who wants a repair at a fair price..."</p>
+                    <div class="review-author">
+                        <span>Pete Sharpe</span>
+                        <span class="stars"><i class="fa-solid fa-star"></i> 5/5</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"A great home run business. Labeeb looked after me, with a Microsoft Surface laptop, very happy with my purchase and service. He will accept onsite visits with an appointment. Recommend this business, well deserved."</p>
+                    <div class="review-author">
+                        <span>Nat Ciccone</span>
+                        <span class="stars"><i class="fa-solid fa-star"></i> 5/5</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Great service from Labeeb, really good communication and the repair was done quickly although not urgent. Really nice guy. Will definitely use him again. Highly recommend."</p>
+                    <div class="review-author">
+                        <span>Angie Biden</span>
+                        <span class="stars"><i class="fa-solid fa-star"></i> 5/5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta text-center reveal" style="background-image: linear-gradient(rgba(17, 17, 17, 0.75), rgba(17, 17, 17, 0.85)), url('circuit-board.jpg');">
+        <div class="container">
+            <h2>Need Quick Diagnostic Advice?</h2>
+            <p>Call Labeeb directly for a quick chat about your PC or MacBook issue.</p>
+            <a href="tel:07557351219" class="btn btn-primary btn-large"><i class="fa-solid fa-phone"></i> Call 07557 351219</a>
+        </div>
+    </section>
+
+    <!-- Shared Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">LAS <span class="primary-text">TECH REPAIRS</span></a>
+                    <p>Expert computer, MacBook, and PC diagnostic & repair services in Chessington. Direct 1-on-1 support with Labeeb. Reasonable rates and free consultations.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <p>
+                        <a href="laptop-screen.html">Screen Repair</a> &middot; 
+                        <a href="slow-performance.html">Performance Tuneup</a> &middot; 
+                        <a href="virus-malware.html">Virus &amp; Malware</a> &middot; 
+                        <a href="data-recovery.html">Data Recovery</a> &middot; 
+                        <a href="ram-storage.html">SSD &amp; RAM Upgrades</a> &middot; 
+                        <a href="keyboard-ports.html">Keyboard &amp; Ports</a>
+                    </p>
+                </div>
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li>Monday - Sunday: 8:00 am &ndash; 10:30 pm</li>
+                        <li>(Evening visits available by appointment)</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Speak with Labeeb</h4>
+                    <p class="phone-num"><a href="tel:07557351219">07557 351219</a></p>
+                    <p class="address-text" style="margin-top: 15px;">Chessington, Kingston upon Thames, England</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; LAS - Tech Repairs 2026. All rights reserved.</p>
+                <p class="agency-credit">Website by CollabCreate Marketing &mdash; <a href="../index.html">Back to Demo Hub</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" class="lightbox-content" src="" alt="Enlarged gallery view">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <!-- Booking Confirmation Modal -->
+    <div id="bookingModal" class="booking-modal" onclick="closeBookingModal()">
+        <div class="booking-modal-content" onclick="event.stopPropagation()">
+            <span class="booking-modal-close" onclick="closeBookingModal()">&times;</span>
+            <div class="modal-success-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h2>Appointment Requested!</h2>
+            <p>Thank you for requesting an appointment with Labeeb. He will contact you shortly on your provided phone number to confirm his availability and details.</p>
+            <button class="btn btn-primary" onclick="closeBookingModal()">Got it, thanks!</button>
+        </div>
+    </div>
+
+    <!-- Core JavaScript -->
+    <script>
+        // Hamburger toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.querySelector('i').classList.toggle('fa-bars');
+            hamburger.querySelector('i').classList.toggle('fa-xmark');
+        });
+
+        // Intersection Observer Scroll Animations
+        const revealElements = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        revealElements.forEach(el => observer.observe(el));
+
+        // Lightbox functionality
+        function openLightbox(src, caption) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            const cap = document.getElementById('lightbox-caption');
+            
+            img.src = src;
+            cap.innerHTML = caption;
+            lightbox.classList.add('active');
+            
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Native Booking Form Submission Handler
+        function handleBookingSubmit(event) {
+            event.preventDefault();
+            const modal = document.getElementById('bookingModal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            event.target.reset();
+            return false;
+        }
+
+        function closeBookingModal() {
+            const modal = document.getElementById('bookingModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    </script>
+</body>
+</html>

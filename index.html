@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | LAS - Tech Repairs Chessington</title>
-    <meta name="description" content="Expert home-run computer, MacBook and PC repair service in Chessington. Screen swaps, upgrades, virus cleanup, and consultations by Labeeb.">
+    <title>Home | LAS - Tech Repairs</title>
+    <meta name="description" content="Expert home-run computer, MacBook and PC repair service. Screen swaps, upgrades, virus cleanup, and consultations by Labeeb.">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- FontAwesome Icons -->
@@ -32,6 +32,7 @@
                         <li><a href="power-charging.html">Power &amp; Battery</a></li>
                     </ul>
                 </li>
+                <li><a href="https://mowleed2000.github.io/LasLaptops/" class="nav-link-laptops"><i class="fa-solid fa-laptop"></i> Surface Store</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="tel:07557351219" class="btn-nav-cta"><i class="fa-solid fa-phone"></i> Call Labeeb</a></li>
             </ul>
@@ -45,7 +46,7 @@
     <section class="hero" style="background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95)), url('repair-hero.jpg');">
         <div class="container hero-grid">
             <div class="hero-content reveal">
-                <span class="eyebrow"><i class="fa-solid fa-house-laptop"></i> Expert Chessington PC &amp; MacBook Repair</span>
+                <span class="eyebrow"><i class="fa-solid fa-house-laptop"></i> Expert PC &amp; MacBook Repair</span>
                 <h1>Direct Computer Repairs. <br>Schedule with <span class="primary-text">Labeeb</span>.</h1>
                 <p class="hero-tagline">Premium computer and laptop repairs at fair, transparent rates. Arrange a home call-out visit, drop off your computer, or speak to Labeeb directly for free expert advice.</p>
                 <div class="hero-btns">
@@ -74,7 +75,7 @@
         <div class="container">
             <div class="section-header text-center reveal">
                 <h2>Our Computer Repair Services</h2>
-                <p class="subheading">Free advice, drop-offs, and door-to-door services across Chessington.</p>
+                <p class="subheading">Advice, drop-offs, and door-to-door services across the local area.</p>
                 <div class="accent-divider"></div>
             </div>
             
@@ -253,7 +254,7 @@
                             </label>
                             <label class="radio-label">
                                 <input type="radio" name="deliveryOption" value="callout">
-                                <span>Home call-out (Chessington area)</span>
+                                <span>Home call-out (local area)</span>
                             </label>
                             <label class="radio-label">
                                 <input type="radio" name="deliveryOption" value="phone">
@@ -305,8 +306,8 @@
     <section class="reviews">
         <div class="container">
             <div class="section-header text-center reveal">
-                <h2>5.0 Star Rated in Chessington</h2>
-                <p class="subheading">Here's what local residents say about Labeeb's support.</p>
+                <h2>5.0 Star Rated</h2>
+                <p class="subheading">Here's what customers say about Labeeb's support.</p>
                 <div class="accent-divider"></div>
             </div>
             
@@ -351,7 +352,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="footer-logo">LAS <span class="primary-text">TECH REPAIRS</span></a>
-                    <p>Expert computer, MacBook, and PC diagnostic & repair services in Chessington. Direct 1-on-1 support with Labeeb. Reasonable rates and free consultations.</p>
+                    <p>Expert computer, MacBook, and PC diagnostic & repair services. Direct 1-on-1 support with Labeeb. Reasonable rates and consultations.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Services</h4>
@@ -374,12 +375,10 @@
                 <div class="footer-contact">
                     <h4>Speak with Labeeb</h4>
                     <p class="phone-num"><a href="tel:07557351219">07557 351219</a></p>
-                    <p class="address-text" style="margin-top: 15px;">Chessington, Kingston upon Thames, England</p>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; LAS - Tech Repairs 2026. All rights reserved.</p>
-                <p class="agency-credit">Website by CollabCreate Marketing &mdash; <a href="../index.html">Back to Demo Hub</a></p>
             </div>
         </div>
     </footer>
@@ -472,6 +471,15 @@
             const modal = document.getElementById('bookingModal');
             modal.classList.remove('active');
             document.body.style.overflow = '';
+        }
+
+        // Local Link Resolver for sibling dev folders
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.port) {
+            document.querySelectorAll('a[href^="https://mowleed2000.github.io/LasLaptops/"]').forEach(link => {
+                let href = link.getAttribute('href');
+                href = href.replace('https://mowleed2000.github.io/LasLaptops/', '../las-laptop-store/');
+                link.setAttribute('href', href);
+            });
         }
     </script>
 </body>

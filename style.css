@@ -203,6 +203,23 @@ h1, h2, h3, h4 {
     color: #ffffff !important;
 }
 
+.nav-links .nav-link-laptops {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--primary-glow);
+    color: var(--primary) !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 700 !important;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+.nav-links .nav-link-laptops:hover {
+    background-color: var(--primary);
+    color: #ffffff !important;
+}
+
 .hamburger {
     display: none;
     color: var(--text-main);

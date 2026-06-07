@@ -210,6 +210,19 @@
             hamburger.querySelector('i').classList.toggle('fa-xmark');
         });
 
+        // Mobile dropdown toggle
+        const dropdownTrigger = document.querySelector('.dropdown-trigger');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+        
+        if (dropdownTrigger && dropdownMenu) {
+            dropdownTrigger.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdownMenu.classList.toggle('active');
+                }
+            });
+        }
+
         // Intersection Observer Scroll Animations
         const revealElements = document.querySelectorAll('.reveal');
         const observer = new IntersectionObserver((entries, obs) => {
